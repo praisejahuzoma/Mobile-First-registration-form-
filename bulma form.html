@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile First registration form </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  </head>
+  <body>
+<!-- hero-->
+<section class="hero is-primary is-large "  >
+<div class="hero-body">
+<div class="container" style="margin-top:30px;">
+<h1 class="title is">Mobile First registration form </h1>
+<h2 class="subtitle">using BULMA CSS.</h2>
+</div>
+</div>
+</section>
+<style>
+    .is-horizontal-center {
+      justify-content: center;
+    }
+</style>
+    <div class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class=" columns is-centered" style="margin-top: -70px;">
+            <div class="column is-8">
+              <form action="" class="box" >
+                  <div class='is-flex is-horizontal-center'>
+                      <figure class="image   " >
+                          <img class="is-rounded" src="data:image/jpeg;base64,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" style="margin-top:-70.3px; height: 145px;width: 140px;">
+                        </figure>
+                  </div>
+                <div class="columns">
+                   
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">First Name</label>
+                               <div>
+                            <input type="text" class="input" placeholder="First Name" required>
+                        </div>
+                          </div>
+                        </div>
+                     
+                        
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Last Name</label>
+                               <div>
+                            <input type="text" class="input" placeholder="Last Name" required>
+                        </div>
+                          </div>
+                        </div>
+                     
+                       
+              </div>
+            <div class="columns">
+                        <div class="column ">
+                            <div class="field">
+                                <label class="label">Age</label>
+                                <div class="control has-icons-left">
+                                    <input type="date" class="input" placeholder="Age" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-calendar-alt"></i>
+                                    </span>
+                                </div>
+                            </div>
+                    </div>
+                   
+                    
+                    <div class="column ">
+                        <div class="field">
+                            <label class="label">Gender</label>
+                            <div class="control has-icons-left">
+                                <input type="text" class="input" placeholder="Male/Female" required>
+                                <span class="icon is-small is-left">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+                </div>
+           </div>    
+        
+        
+           <div class="columns">
+              <div class="column ">
+                  <div class="control box">
+                      <section>
+                          <h2 class="subtitle " style="font-size:15px; margin-top:20px;"> Do you have access to the internet (Basic requirement for this class)</h2>
+                          </section>
+                      <label class="radio">
+                        <input type="radio" name="answer">
+                        Yes
+                      </label>
+                      <label class="radio">
+                        <input type="radio" name="answer">
+                        No
+                      </label>
+                   </div>
+                  </div>
+                  <div class="column ">
+                    <div class="control box">
+                        <section>
+                            <h2 class="subtitle " style="font-size:15px; margin-top:20px;"> Do you have access to the internet (Basic requirement for this class)</h2>
+                            </section>
+                        <label class="radio">
+                          <input type="radio" name="answer">
+                          Yes
+                        </label>
+                        <label class="radio">
+                          <input type="radio" name="answer">
+                          No
+                        </label>
+                     </div>
+                    </div>
+                  </div>
+                   <div class="columns">
+                          <div class="column ">
+                              <div class="field">
+                                  <label class="label">Name of Parent/Guardian</label>
+                                  <div>
+                                      <input type="text" class="input" placeholder="Name of Parent/Guardian" required>
+                                      
+                                  </div>
+                              </div>
+                      </div>
+                      <div class="column ">
+                          <div class="field">
+                              <label class="label">Phone number of Parent/Guardian</label>
+                              <div class="control has-icons-left">
+                                  <input type="tel" class="input" placeholder="Phone Number" required>
+                                  <span class="icon is-small is-left">
+                                      <i class="fa fa-phone"></i>
+                                  </span>
+                              </div>
+                          </div>
+                    </div>  
+                     </div>  
+                      <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control has-icons-left">
+                                <input type="email" class="input" placeholder="e.g. hkakehas@cisco.com" required>
+                                <span class="icon is-small is-left">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                            </div>
+                       </div>
+                        <label class="checkbox">
+                            <input type="checkbox" style="margin-top:10px;">
+                            <span style="font-size:15px;">I hereby give my permission for my child/ward to take part in the training for the duration of the program.</span>
+                        </label>
+                     <div class="field is-grouped-centered">
+                              <div class="control mt-6">
+                                  <p style="text-align: center;"><button class="button is-primary submit-button px-6">
+                                          <span class="icon is-small">
+                                              <i class="fas fa-check"></i>
+                                          </span>
+                                          <span>Submit</span>
+                                      </button>
+                                  </p>
+                              </div>
+                 </div>
+               </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
